@@ -1,7 +1,14 @@
-export default function App() {
+import React from 'react'
+import { Main } from './sections/Main'
+import { Sidebar } from './sections/Sidebar'
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <main className='w-full bg-slate-200 h-screen flex justify-between items-start'>
+      <Sidebar />
+      <Main />
+    </main>
   )
 }
+
+export default App
